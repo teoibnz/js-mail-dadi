@@ -42,6 +42,27 @@ let userScore = document.querySelector("#user-match");
 
 let startTheGame = document.getElementById("start-game");
 
-let pcScore =document.getElementById("pc-match");
+let pcScore = document.getElementById("pc-match");
 
 let finalScore = document.getElementById("final-score");
+
+
+startTheGame.addEventListener("click", function() {
+    userScore = Math.floor(Math.random() * 6) + 1; 
+    console.log(userScore);
+    document.getElementById("user-match").innerHTML = (userScore);
+    pcScore = Math.floor(Math.random() * 6) + 1; 
+    document.getElementById("pc-match").innerHTML = (pcScore);
+    console.log(pcScore);
+
+    if (userScore < pcScore) {
+        console.log("hai perso");
+        document.getElementById("final-score").innerHTML = "Hai perso!"
+    } else if (userScore > pcScore){
+        document.getElementById("final-score").innerHTML = "Hai vinto!"
+        console.log("hai vinto");
+    } else {
+        document.getElementById("final-score").innerHTML = "Hai pareggiato!"
+        console.log("Pareggio");
+    }
+})
