@@ -1,7 +1,3 @@
-// creare database di mail - array
-    // * creo un  variabile con array chiamata userMail
-    // * inserisco gli indirizzi
-
 
 const userMail = ["matteo@dajeroma.it", "luca@dajeroma.it", "totti@dajeroma.it", "batman@dajeroma.it", "regressione@dajeroma.it","cresta@dajeroma.it","mail@dajeroma.it","umpalumpa@dajeroma.it","dicapra@dajeroma.it","vittoriosgarbi@dajeroma.it",]
 console.log (userMail);
@@ -27,7 +23,7 @@ generatedEvent.addEventListener('click', function() {
         }
         
     };
-    if (check = true) {
+    if (check == true) {
         mailValidation.innerHTML = "PUOI ACCEDERE!"
     } else {
         mailValidation.innerHTML = " NON PUOI ACCEDERE!"
@@ -35,6 +31,13 @@ generatedEvent.addEventListener('click', function() {
 
     userMailAccount.value= "";
 });
+
+
+
+
+
+
+
 
 // sezione game
 
